@@ -47,6 +47,14 @@ function generatePassword() {
   if (numbersWindow) {
     passwordOptions.push(...numbers)
   };
+  
+
+  let newPassword = "";
+
+  for (let i = 0; i < charLength; i++) {
+    newPassword += passwordOptions[Math.floor(Math.random() * passwordOptions.length)]; 
+  }
+  return newPassword;
 
 }
 
