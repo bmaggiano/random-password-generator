@@ -30,6 +30,7 @@ function generatePassword() {
   }
 
   let passwordOptions = []
+  //Confirms resolve to boolean values, based on that, we build the appropriate array
   var upperCaseWindow = confirm("Do you want any uppercase characters?");
   var lowerCaseWindow = confirm("Do you want any lowercase characters?");
   var specialCharWindow = confirm("Do you want any special characters?");
@@ -50,7 +51,7 @@ function generatePassword() {
 
 
   let newPassword = "";
-
+  //loop to get random password from the amount of characters the user would like
   for (let i = 0; i < charLength; i++) {
     newPassword += passwordOptions[Math.floor(Math.random() * passwordOptions.length)]; 
   }
@@ -58,6 +59,7 @@ function generatePassword() {
 
 }
 
+//Call function
 writePassword();
 
 // Add event listener to generate button
