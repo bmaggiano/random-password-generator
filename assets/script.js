@@ -29,6 +29,11 @@ function generatePassword() {
     alert("PERFECT! Now let's talk protection!")
   }
 
+  let passwordOptions = []
+  var upperCaseWindow = confirm("Do you want any uppercase characters?");
+  var lowerCaseWindow = confirm("Do you want any lowercase characters?");
+  var specialCharWindow = confirm("Do you want any special characters?");
+  var numbersWindow = confirm("Do you want any numbers?");
 
 }
 
