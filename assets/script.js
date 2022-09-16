@@ -47,7 +47,7 @@ function generatePassword() {
   if (numbersWindow) {
     passwordOptions.push(...numbers)
   };
-  
+
 
   let newPassword = "";
 
@@ -58,6 +58,7 @@ function generatePassword() {
 
 }
 
+writePassword();
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
