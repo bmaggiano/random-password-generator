@@ -35,6 +35,19 @@ function generatePassword() {
   var specialCharWindow = confirm("Do you want any special characters?");
   var numbersWindow = confirm("Do you want any numbers?");
 
+  if (upperCaseWindow) {
+    passwordOptions.push(...upperCase);
+  };
+  if (lowerCaseWindow) {
+    passwordOptions.push(...lowerCase);
+  }; 
+  if (specialCharWindow) {
+    passwordOptions.push(...specialChar)
+  }; 
+  if (numbersWindow) {
+    passwordOptions.push(...numbers)
+  };
+
 }
 
 
