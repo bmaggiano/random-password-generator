@@ -17,7 +17,12 @@ A lot went into the making of this and the theory of functions really start to t
 
 ## Link to deployed URL
 
+https://bmaggiano.github.io/random-password-generator/
+
 ## Screenshot of application
+
+![image](https://user-images.githubusercontent.com/103971233/190818491-ceff76aa-56f0-445d-ae1c-39f6bbfc4e89.png)
+
 
 ## License
 
