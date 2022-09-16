@@ -19,14 +19,14 @@ const numbers = ['1','2','3','4','5','6','7','8','9','0'];
 
 function generatePassword() {
 
-  var charLength = prompt("Please enter a character value between 8-128");
+  var charLength = prompt("Please enter a character value between 8-128.");
   charLength = parseInt(charLength);
 
   if (charLength < 8 || charLength > 128) {
-    alert('Not a valid entry, try again');
+    alert('Not a valid entry, please try again by clicking "Generate Password"');
     return;
   } else {
-    alert("PERFECT! Now let's talk protection!")
+    alert("PERFECT! Now let's talk protection...")
   }
 
   let passwordOptions = []
@@ -50,13 +50,17 @@ function generatePassword() {
   };
 
 
+  if (upperCaseWindow || lowerCaseWindow || specialCharWindow || numbersWindow) {
   let newPassword = "";
   //loop to get random password from the amount of characters the user would like
   for (let i = 0; i < charLength; i++) {
     newPassword += passwordOptions[Math.floor(Math.random() * passwordOptions.length)]; 
   }
   return newPassword;
-
+} else {
+  alert("You must select at least ONE of these options. Try again.")
+  return;
+}
 }
 
 //Call function

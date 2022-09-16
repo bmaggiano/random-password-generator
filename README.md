@@ -1,4 +1,25 @@
-# 03 JavaScript: Password Generator
+# Random Password Generator
+
+## Description
+
+This web application serves to help build a random password for a user given a few circumstances. Building a secure password in today's age is a crucial concept for everyone who wishes to remain safe when browsing the web. Whether that's making sure someone can't easily guess your password, or making sure someone can't hack you from across the globe.
+
+This web app allows you to decrease the likelihood of creating an easy to guess password like "password" by giving the user a series of random characters. The user will be prompted to enter a specified password length between 8 and 128 characters, then the user will be prompted with a series of questions such as:
+
+"Do you want any uppercase characters?"
+"Do you want any lowercase characters?"
+"Do you want any special characters?"
+"Do you want any numbers?"
+
+Then using that infomation, an array will be built using a Javascript push method using pre built arrays of uppercase/lowercase/special/number characters. Once that array is built, then our for loop along with our math.floor math.random methods will build a string of random characters from our PUSHED array. This password will then be presented back to the user using a Query selector and changing the password text value to the users new password. 
+
+A lot went into the making of this and the theory of functions really start to take hold as well as global and local variables. If statements and loops also became much more clear to me throughout this and I'm excited to see the full scope of Javascript in the future.
+
+## Link to deployed URL
+
+## Screenshot of application
+
+## License
 
 ## Your Task
 
